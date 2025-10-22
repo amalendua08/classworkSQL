@@ -1,0 +1,11 @@
+CREATE DATABASE BookstoreDB;
+USE BookstoreDB;
+ CREATE TABLE Customers(CustomerID INT PRIMARY KEY
+      ,CustomerName NVARCHAR(50)
+      ,City NVARCHAR(50)
+      ,PostalCode VARCHAR(10)
+      ,Country VARCHAR(15));
+ USE BookstoreDB;
+ INSERT INTO Customers VALUES('01','Maria','Mandrid','28001','Spain'),('02','John','New York','10001','USA'),('03','Priya','Chennai','600001','India'), ('04''Ahmed','Cairo','11511','Egypt');
+ USE BookstoreDB;
+SELECT * FROM Customers WHERE Country IN ('India','Egypt');
